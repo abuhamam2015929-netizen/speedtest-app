@@ -1,4 +1,18 @@
-android.useAndroidX=true
-android.nonTransitiveRClass=true
-kotlin.code.style=official
-org.gradle.jvmargs=-Xmx2048m
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "SpeedTestApp"
+include(":app")
